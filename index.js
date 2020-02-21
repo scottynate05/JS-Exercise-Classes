@@ -150,7 +150,7 @@ class Instructor extends Lambdasian {
     return `${student.name} receives a perfect score on ${this.subject}`;
   }
   work() {
-    return Math.random() - this.student.grade;
+    return Math.floor(Math.random() * 11) - this.student.grade;
   }
 }
 
